@@ -1,0 +1,56 @@
+/*#table1 td:first-child {font-weigth: bolder;}
+#table1 td:first-child {font-weight: monospace;}*/
+
+/* Basic border properties of tables */
+table { 
+	empty-cells: show;
+	border: 2px solid black;
+}
+
+table td, table th {
+	empty-cells: show;
+	border: 2px solid black;
+}
+
+/* Header row *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
+#table1 > thead > tr:first-child > th {
+	font-style: bold;
+	text-align: center;
+}
+
+#table1 > thead > tr + tr > th {
+	font-style: bold;
+	text-align: center;
+}
+
+/* Header column *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
+#table1 > tbody > tr:first-child > th {
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+}
+
+#table1 > tbody > tr + tr > th {
+	font-style: italic;
+	font-weight: normal;
+	text-align: center; 
+}
+
+/* Column based text coloring */
+tbody > tr td:nth-child(2) {
+	color: red;
+}
+
+tbody > tr td:nth-child(4) {
+	color: blue;
+}
+
+/* Row background coloring */
+tbody tr:nth-child(2n + 1) {
+	background-color: #90EE90;
+}
+
+tbody tr:nth-child(2n + 2) {
+	background-color: #ADD8E6;
+}
+
