@@ -1,113 +1,146 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Basic Layout</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<!-- This section is for the 6x6 table -->
-		<div>
-			<table id="table1">
-				<caption>Cost of TV Brands by Size</caption>
-				<thead>
-					<tr> 
-						<th></th> 
-						<th>Panasonic</th> 
-						<th>Sony</th> 
-						<th>Samsung</th> 
-						<th>Sharp</th> 
-						<th>Toshiba</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr> 
-						<th>19"</th> 
-						<td>$300</td> 
-						<td>$500</td> 
-						<td>$100</td> 
-						<td>$600</td> 
-						<td>$50</td> 
-					</tr>
-					<tr> 
-						<th>22"</th> 
-						<td>$400</td> 
-						<td>$600</td> 
-						<td>$200</td> 
-						<td>$700</td> 
-						<td>$100</td>
-					<tr> 
-						<th>32"</th> 
-						<td>$500</td> 
-						<td>$700</td> 
-						<td>$300</td> 
-						<td>$800</td> 
-						<td>$200</td>
-					<tr> 
-						<th>40"</th> 
-						<td>$700</td> 
-						<td>$900</td> 
-						<td>$500</td> 
-						<td>$900</td> 
-						<td>$300</td>
-					<tr> 
-						<th>52"</th> 
-						<td>$1000</td> 
-						<td>$1200</td> 
-						<td>$700</td> 
-						<td>$2000</td> 
-						<td>$400</td>
-					</tr>
-				</tbody>
-				<tfoot>
-					<tr>
-						<td colspan=2>Footer 1</td> 
-						<td colspan=4>Footer 2</td>
-					</tr>
-				</tfoot>
-			</table>
-		</div>
-		
-		<!-- This section is for the list with color action -->
-		<div>
-			<dl class="hovercolor">
-				<dt>
-					Football Team
-					<dd>
-						Vikings
-					</dd>
-				</dt>
-				<dt>
-					Basketball Team
-					<dd>
-						Lakers
-					</dd>
-				</dt>
-				<dt>
-					Baseball Team
-					<dd>
-						Rockies
-					</dd>
-				</dt>
-			</dl>
-		</div>
-		
-		<!-- This section is for the two forms... one push and one get -->
-		<div>
-			<form action=http://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php" method="get">
-				<p>Basic Text: 
-					<input type="text" name="text_input"> 
-				</p>
-				<p>Number Here:
-					<input type="number" name="numerical_input">
-				</p>
-				<p>Password Here:
-					<input type="hidden" name="password_input">
-				</p>
-				<input type="radio" name="candy" value="Snickers">Snickers
-				<input type="radio" name="candy" value="Skittles">Skittles
-				<input type="radio" name="candy" value="Mentos">Mentos
-			</form>
-		</div>
+  <head>
+	<meta charset="UTF-8">
+	<title>Basic Layout</title>
+	<link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	
+    <!-- This section is for the 6x6 table -->
+	<div>
+	  <table>
+		<caption>Cost of TV Brands by Size</caption>
+		  <thead>
+			<tr> 
+			  <th>
+			  <th>Panasonic
+			  <th>Sony
+			  <th>Samsung
+			  <th>Sharp
+			  <th>Toshiba
+		  <tbody>
+			<tr> 
+			  <th>19"
+			  <td>$300
+			  <td>$500
+			  <td>$100
+			  <td>$600
+			  <td>$50
+			<tr> 
+			  <th>22"
+			  <td>$400
+			  <td>$600
+			  <td>$200
+			  <td>$700
+			  <td>$100
+			<tr> 
+			  <th>32"
+			  <td>$500
+			  <td>$700
+			  <td>$300
+			  <td>$800
+			  <td>$200
+			<tr> 
+			  <th>40"
+			  <td>$700
+			  <td>$900
+			  <td>$500
+			  <td>$900
+			  <td>$300
+			<tr> 
+			  <th>52"
+			  <td>$1000
+			  <td>$1200
+			  <td>$700
+			  <td>$2000
+			  <td>$400
+			<tfoot>
+			  <tr>
+				<td colspan=2>Footer 1
+				<td colspan=4>Footer 2
+	  </table>
+	</div>
+
+	<!-- This section is for the list with color action -->
+	<div>
+	  <dl>
+		<dt>
+		  Football Team
+		  <dd>Vikings</dd>
+		</dt>
+		<dt>
+		  Basketball Team
+		  <dd>Lakers</dd>
+		</dt>
+		<dt>
+		  Baseball Team
+		  <dd>Rockies</dd>
+		</dt>
+	  </dl>
+	</div>
+	
+	<!-- This section is for the two forms... one get and one push -->
+	<div>
+	  <fieldset>
+		<legend>GET data section </legend>
+		<form method="get" action="https://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php">
+		  <p>
+		    <label for="text">Basic Text:</label> 
+			<input type="text" name="text_input"> 
+		  </p>
+		  <p>
+		    <label for="number">Number Here:</label>
+		    <input type="number" name="numerical_input">
+		  </p>
+		  <p>
+			<label for="password">Password Here:</label>
+			<input type="password" name="password_input">
+		  </p>
+		  <p> Please select one:
+			<br>
+			<input type="radio" name="candy" value="Snickers">Snickers
+			<br>
+			<input type="radio" name="candy" value="Skittles">Skittles
+			<br>
+			<input type="radio" name="candy" value="Mentos">Mentos
+			<br>
+			<button>Submit</button>
+		  </p>
+		</form>
+	  </fieldset>
+	  <br>
+	</div>
+	
+	<div>
+	  <fieldset>
+		<legend>POST data section </legend>
+		<form method="post" action="https://web.engr.oregonstate.edu/~osterbit/2/repo/class-content/form_tests/Formtest.php">
+		  <p>
+			<label for="text">Basic Text:</label> 
+			<input type="text" name="text_input"> 
+		  </p>
+		  <p>
+			<label for="number">Number Here:</label>
+			<input type="number" name="numerical_input">
+		  </p>
+		  <p>
+			<label for="password">Password Here:</label>
+			<input type="password" name="password_input">
+		  </p>
+		  <p> Please select one:
+			<br>
+			<input type="radio" name="candy" value="Snickers">Snickers
+			<br>
+			<input type="radio" name="candy" value="Skittles">Skittles
+			<br>
+			<input type="radio" name="candy" value="Mentos">Mentos
+			<br>
+			<button>Submit</button>
+		  </p>
+		</form>
+	  </fieldset>
+	</div>
+			
 	</body>
 </html>

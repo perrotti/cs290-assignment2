@@ -10,24 +10,24 @@ table td, table th {
 }
 
 /* Header row *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
-#table1 > thead > tr:first-child > th {
+table > thead > tr:first-child > th {
 	font-style: bold;
 	text-align: center;
 }
 
-#table1 > thead > tr + tr > th {
+table > thead > tr + tr > th {
 	font-style: bold;
 	text-align: center;
 }
 
 /* Header column *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
-#table1 > tbody > tr:first-child > th {
+table > tbody > tr:first-child > th {
 	font-style: italic;
 	font-weight: normal;
 	text-align: center;
 }
 
-#table1 > tbody > tr + tr > th {
+table > tbody > tr + tr > th {
 	font-style: italic;
 	font-weight: normal;
 	text-align: center; 
@@ -52,8 +52,17 @@ tbody tr:nth-child(2n + 2) {
 }
 
 /* When hovering over dt, change dd background = purple and text = yellow (so you can read) */
-.hovercolor > dt:hover + dd {
+dl > dt:hover + dd {
 	background-color: purple;
 	color: yellow;
 }
 
+fieldset {
+	border: 2px dotted black;
+	padding: 10px
+}
+
+fieldset > form > p {
+	border: 1px solid black;
+	padding: 10px
+}
