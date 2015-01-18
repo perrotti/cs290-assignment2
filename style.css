@@ -1,68 +1,92 @@
 /* Basic border properties of tables */
 table { 
-	empty-cells: show;
-	border: 2px solid black;
+  empty-cells: show;
+  border: 2px solid black;
 }
 
 table td, table th {
-	empty-cells: show;
-	border: 2px solid black;
+  empty-cells: show;
+  border: 2px solid black;
 }
 
 /* Header row *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
 table > thead > tr:first-child > th {
-	font-style: bold;
-	text-align: center;
+  font-style: bold;
+  text-align: center;
 }
 
 table > thead > tr + tr > th {
-	font-style: bold;
-	text-align: center;
+  font-style: bold;
+  text-align: center;
 }
 
 /* Header column *** helper source: https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Tables */
 table > tbody > tr:first-child > th {
-	font-style: italic;
-	font-weight: normal;
-	text-align: center;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
 }
 
 table > tbody > tr + tr > th {
-	font-style: italic;
-	font-weight: normal;
-	text-align: center; 
+  font-style: italic;
+  font-weight: normal;
+  text-align: center; 
 }
 
 /* Column based text coloring */
 tbody > tr td:nth-child(2) {
-	color: red;
+  color: red;
 }
 
 tbody > tr td:nth-child(4) {
-	color: blue;
+  color: blue;
 }
 
 /* Row background coloring */
 tbody tr:nth-child(2n + 1) {
-	background-color: #90EE90; /* light green */
+  background-color: #90EE90; /* light green */
 }
 
 tbody tr:nth-child(2n + 2) {
-	background-color: #ADD8E6; /* light blue */
+  background-color: #ADD8E6; /* light blue */
 }
 
 /* When hovering over dt, change dd background = purple and text = yellow (so you can read) */
 dl > dt:hover + dd {
-	background-color: purple;
-	color: yellow;
+  background-color: purple;
+  color: yellow;
 }
 
+/* This formatting helps organize the forms by using borders */
 fieldset {
-	border: 2px dotted black;
-	padding: 10px
+  border: 2px dotted black;
+  padding: 10px
 }
 
 fieldset > form > p {
-	border: 1px solid black;
-	padding: 10px
+  border: 1px solid black;
+  padding: 10px
 }
+
+/* Creates the coloring and spacing for the two boxes (one inner, one outer) */
+div.outer-content {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: pink;
+  width: 75%;
+  height: 3em;
+}
+
+div.inner-content {
+  position: relative;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  width: 75%;
+  height: 33.33333333%;
+  left: 12.5%;
+  top: 1em;
+}
+  
